@@ -1,0 +1,38 @@
+Rpg game testing
+
+09:01 19/06/2024
+tried to test 2nd fight
+Realised the sidequest was after the fight so i moved it before
+#Also fixed persisting error where lvl(lower case l) and lv1(number one) look the same
+14:06 19/06/2024
+found an error in sidequest where removing string from list inventory doesn't work because its not an int
+changed pop to remove
+#nope haven't  - popped up with an error - but in testing to get to the 2nd fight (via sidequest)
+managed to get to the start of the fight 
+
+14:03 20/06/2024
+fixed the error hopefully
+note: l is taller 1 is slanted
+14:09 20/06/2024
+played through the fight(without sidequest) and won
+however afterwards it just went back to the lvl 1 fight
+fixed temporarily by adding an exit() though i am not sure what is causing the error
+
+10:58 21/06/2024
+optimization
+removing unessary time.sleeps 
+
+11:58 21/06/2024
+found a bug in the fight
+you can't enter more than your sword can deal ONCE - the second time it lets you
+then infinite loop
+improved with if else and while so it will loop until you put in the correct value
+discovered you can send just variables doesn't have to be integers to functions
+good for integers that are random so you don't know how many gold coins/health player will have
+
+17:30 21/06/2024
+added more plot and lvl3
+more mechanics
+added more detailed instructions
+bug: when you accept icecream but not cupcake it loops back to start
+this was because instructions were inside atHome
